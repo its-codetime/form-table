@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./script.js"></script>
+    <title>form table</title>
+  </head>
+  <body>
+    <h1>Form to Table</h1>
+    <form class="input-form" id="input-form">
+      <input
+        name="first-name"
+        type="text"
+        class="first-name"
+        placeholder="first name"
+      />
+      <input
+        name="last-name"
+        type="text"
+        class="last-name"
+        placeholder="last name"
+      />
+      <div class="gender">
+        <h3>gender</h3>
+        <div class="gender">
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">female</label>
+        </div>
+      </div>
+      <div class="food">
+        <h3>Food(choose atleast 2)</h3>
+        <div class="food-checkbox">
+          <input type="checkbox" id="biryani" value="biryani" />
+          <label for="biryani">biryani</label>
+        </div>
+        <div class="food-checkbox">
+          <input type="checkbox" id="pasta" value="pasta" />
+          <label for="pasta">pasta</label>
+        </div>
+        <div class="food-checkbox">
+          <input type="checkbox" id="burger" value="burger" />
+          <label for="burger">burger</label>
+        </div>
+        <div class="food-checkbox">
+          <input type="checkbox" id="idly-vada" value="idly-vada" />
+          <label for="idly-vada">idly-vada</label>
+        </div>
+        <div class="food-checkbox">
+          <input type="checkbox" id="roti-curry" value="roti-curry" />
+          <label for="roti-curry">roti-curry</label>
+        </div>
+      </div>
+      <input type="text" name="address" class="address" placeholder="address" />
+      <input type="text" name="pincode" class="pincode" placeholder="pincode" />
+      <input type="text" name="state" class="state" placeholder="state" />
+      <input type="text" name="country" class="country" placeholder="country" />
+      <input type="submit" value="Add to Table" />
+      <div class="error"></div>
+    </form>
+    <table class="table hidden">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Food</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>state</th>
+          <th>country</th>
+        </tr>
+      </thead>
+      <tbody class="tbody"></tbody>
+    </table>
+  </body>
+</html>
